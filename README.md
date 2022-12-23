@@ -3,6 +3,8 @@
 ## Overview
 This repository contains code demonstrating the difference between passing arguments by value and by reference in C#. The code includes examples of passing various types (e.g. int, struct, class) as arguments to methods, and modifying the values of the arguments within the methods.
 
+The main file containing the code is `Program.cs`.
+
 ## Output
 The code will output the values of various variables before and after they are passed as arguments to methods. This will illustrate the difference between passing by value and by reference, as well as the impact of modifying the values of the arguments within the methods.
 
