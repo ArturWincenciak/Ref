@@ -132,8 +132,8 @@ void ArgRefStructMethod(ref FirstStruct refStruct)
 }
 
 /*
- * Her we use a reference, or a pointer, to access the object's members.
- * By using a pointer in that way, we directly modify the memory location where the object is stored,
+ * Here we use a reference, or a pointer, to access the object's members.
+ * By using the pointer in that way, we directly modify the memory where the object is stored,
  * so the changes here will be permanent.
  */
 void EditPropsOfArgClassMethod(Class argClass)
@@ -152,7 +152,7 @@ void EditPropsOfArgClassMethod(Class argClass)
  * Just like in the previous method, here we use an address, or a reference, or a pointer,
  * to modify the object's members directly in the memory where the object is stored.
  * In this case, it doesn't matter whether we use the "ref" keyword or not,
- * the effect will always be the same. To observe the differences, take a look at the next cases below.
+ * the effect will always be the same. To observe differences, take a look at the next cases below.
  */
 void EditPropsOfArgRefClassMethod(ref Class refClass)
 {
@@ -195,7 +195,7 @@ void CreateNewUsingArgClassMethod(Class argClass)
 /*
  * Here we pass a hexadecimal pointer which is a 'value type',
  * but using the "ref" keyword we pass a reference to the memory location
- * where this hexadecimal value is stored, allowing us to write a new address
+ * where this value of 'value typed' is stored, allowing us to write a new address
  * to a newly created object in the same memory cell. It is important to note that
  * we are not passing the address of the object here, we are passing the address
  * of the location where the address of the object is stored.
