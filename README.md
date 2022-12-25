@@ -19,3 +19,49 @@ Another technique to improve the performance of your program is to pass value ty
 
 ## To dive deeper
 See the continuation on `ref loclas` and `ref returns` that repo: [Ref-Lokals-Ref-Returns](https://github.com/ArturWincenciak/Ref-Lokals-Ref-Returns)
+
+## Output
+
+```
+Alright ref!
+
+Passing an argument by reference.
+
+#01: globalInt = 100
+
+ArgIntMethod #1: argInt = 100
+ArgIntMethod #2: argInt = 200
+#02: globalInt = 100
+
+ArgRefIntMethod #1: refArgInt = 100
+ArgRefIntMethod #2: refArgInt = 200
+#03: globalInt = 200
+
+#04: globalStruct = [IntProp: 1000, StrProp: _str_in_struct_, ClassProp: [DoubleProp: 1000.1, StrProp: _str_in_class_, StructInClassProp: [FloatProp: 1000.2]], StructInStructProp: [FloatProp: 1000.3]]
+
+ArgStructMethod: #1: argStruct = [IntProp: 1000, StrProp: _str_in_struct_, ClassProp: [DoubleProp: 1000.1, StrProp: _str_in_class_, StructInClassProp: [FloatProp: 1000.2]], StructInStructProp: [FloatProp: 1000.3]]
+ArgStructMethod: #2: argStruct = [IntProp: 2000, StrProp: _str_in_struct_modified_, ClassProp: [DoubleProp: 2000.1, StrProp: _str_in_class_modified_, StructInClassProp: [FloatProp: 2000.2]], StructInStructProp: [FloatProp: 2000.3]]
+#05: globalStruct = [IntProp: 1000, StrProp: _str_in_struct_, ClassProp: [DoubleProp: 2000.1, StrProp: _str_in_class_modified_, StructInClassProp: [FloatProp: 2000.2]], StructInStructProp: [FloatProp: 1000.3]]
+
+ArgRefStructMethod: #1: refStruct = [IntProp: 1000, StrProp: _str_in_struct_, ClassProp: [DoubleProp: 2000.1, StrProp: _str_in_class_modified_, StructInClassProp: [FloatProp: 2000.2]], StructInStructProp: [FloatProp: 1000.3]]
+ArgRefStructMethod: #2: refStruct = [IntProp: 2000, StrProp: _str_in_struct_modified_, ClassProp: [DoubleProp: 3000.1, StrProp: _str_in_class_modified_modified_, StructInClassProp: [FloatProp: 3000.2]], StructInStructProp: [FloatProp: 2000.3]]
+#06: globalStruct = [IntProp: 2000, StrProp: _str_in_struct_modified_, ClassProp: [DoubleProp: 3000.1, StrProp: _str_in_class_modified_modified_, StructInClassProp: [FloatProp: 3000.2]], StructInStructProp: [FloatProp: 2000.3]]
+
+#07: globalClass = [DoubleProp: 10.1, StrProp: _str_, StructInClassProp: [FloatProp: 10.2]]
+
+EditPropsOfArgClassMethod: #1: argClass = [DoubleProp: 10.1, StrProp: _str_, StructInClassProp: [FloatProp: 10.2]]
+EditPropsOfArgClassMethod: #2: argClass = [DoubleProp: 20.1, StrProp: modified_, StructInClassProp: [FloatProp: 20.2]]
+#08: globalClass = [DoubleProp: 20.1, StrProp: modified_, StructInClassProp: [FloatProp: 20.2]]
+
+EditPropsOfArgRefClassMethod: #1: refClass = [DoubleProp: 20.1, StrProp: modified_, StructInClassProp: [FloatProp: 20.2]]
+EditPropsOfArgRefClassMethod: #2: refClass = [DoubleProp: 30.1, StrProp: modified_, StructInClassProp: [FloatProp: 30.2]]
+#09: globalClass = [DoubleProp: 30.1, StrProp: modified_, StructInClassProp: [FloatProp: 30.2]]
+
+CreateNewUsingArgClassMethod: #1: argClass = [DoubleProp: 30.1, StrProp: modified_, StructInClassProp: [FloatProp: 30.2]]
+CreateNewUsingArgClassMethod: #2: argClass = [DoubleProp: 123456789, StrProp: _the_new_one_without_ref_, StructInClassProp: [FloatProp: 123456790]]
+#10: globalClass = [DoubleProp: 30.1, StrProp: modified_, StructInClassProp: [FloatProp: 30.2]]
+
+CreateNewUsingArgRefClassMethod: #1: refClass = [DoubleProp: 30.1, StrProp: modified_, StructInClassProp: [FloatProp: 30.2]]
+CreateNewUsingArgRefClassMethod: #2: refClass = [DoubleProp: 987654321, StrProp: _the_new_one_by_ref_, StructInClassProp: [FloatProp: 987654340]]
+#11: globalClass = [DoubleProp: 987654321, StrProp: _the_new_one_by_ref_, StructInClassProp: [FloatProp: 987654340]]
+```
