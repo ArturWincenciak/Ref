@@ -15,3 +15,6 @@ Keep in mind that passing arguments by reference can lead to more difficult to p
 When writing highly performant applications, it is often beneficial to use value types such as structs instead of reference types like class. This is because structs are stored on the stack rather than the heap, which means the garbage collector has less work to do as it does not need to track and clean up unused structs.
 
 Another technique to improve the performance of your program is to pass value types as reference arguments in methods. This avoids the overhead of copying the bytes of the value into the local scope of the method, especially when working with large value types or frequently calling the method.
+
+## To dive deeper
+See the continuation on `ref loclas` and `ref returns` that repo: [Ref-Lokals-Ref-Returns](https://github.com/ArturWincenciak/Ref-Lokals-Ref-Returns)
