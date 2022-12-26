@@ -2,8 +2,6 @@
 
 ## Overview
 
-The main file containing the code is `Program.cs`.
-
 This repository contains code demonstrating the difference between passing arguments by value and by reference in C#. The code includes examples of passing various types (e.g. int, struct, class) as arguments to methods, and modifying the values of the arguments within the methods.
 
 Blog post: [Ref Returns, Ref Locals, Ref Arg](https://teovincentblog.wordpress.com/2022/12/26/ref-returns-ref-locals-ref-arg)
