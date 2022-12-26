@@ -18,7 +18,7 @@ When writing highly performant applications, it is often beneficial to use value
 Another technique to improve the performance of your program is to pass value types as reference arguments in methods. This avoids the overhead of copying the bytes of the value into the local scope of the method, especially when working with large value types or frequently calling the method.
 
 ## To dive deeper
-See the continuation on `ref loclas` and `ref returns` that repo: [Ref-Lokals-Ref-Returns](https://github.com/ArturWincenciak/Ref-Lokals-Ref-Returns)
+See the continuation on `ref loclas` and `ref returns` that repo: [Ref-Lokals-Ref-Returns](https://github.com/ArturWincenciak/Ref-Locals-Ref-Returns)
 
 ## Output
 
