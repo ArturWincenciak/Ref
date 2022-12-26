@@ -6,8 +6,7 @@ The main file containing the code is `Program.cs`.
 
 This repository contains code demonstrating the difference between passing arguments by value and by reference in C#. The code includes examples of passing various types (e.g. int, struct, class) as arguments to methods, and modifying the values of the arguments within the methods.
 
-## Output
-The code will output the values of various variables before and after they are passed as arguments to methods. This will illustrate the difference between passing by value and by reference, as well as the impact of modifying the values of the arguments within the methods.
+Blog post: [Ref Returns, Ref Locals, Ref Arg](https://teovincentblog.wordpress.com/2022/12/26/ref-returns-ref-locals-ref-arg)
 
 ## Notes
 Keep in mind that passing arguments by reference can lead to more difficult to predict code behavior and more difficult debugging. Therefore, caution should be taken and the appropriateness of using reference arguments should be considered.
@@ -21,6 +20,7 @@ Another technique to improve the performance of your program is to pass value ty
 See the continuation on `ref loclas` and `ref returns` that repo: [Ref-Lokals-Ref-Returns](https://github.com/ArturWincenciak/Ref-Locals-Ref-Returns)
 
 ## Output
+The code will output the values of various variables before and after they are passed as arguments to methods. This will illustrate the difference between passing by value and by reference, as well as the impact of modifying the values of the arguments within the methods.
 
 ```
 Alright ref!
